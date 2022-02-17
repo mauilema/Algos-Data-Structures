@@ -18,4 +18,4 @@ function swapEl (i, j, array) {
 	[array[i], array[j]] = [array[j], array[i]]
 }
 
-<!-- Comments to come soon -->
+<!--Comments to come soon...-->
