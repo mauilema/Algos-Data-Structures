@@ -22,4 +22,4 @@ graph =
 </pre>
 
 <h4>Sample Output</h4>
-[A, B, E, F, I, J, C, D, G, H, K, L]
+["A", "B", "E", "F", "I", "J", "C", "D", "G", "H", "K", "L"]
