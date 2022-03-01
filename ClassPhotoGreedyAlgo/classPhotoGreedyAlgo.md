@@ -14,4 +14,6 @@ yellowShirtHeights = [7, 3, 6, 10, 12, 16]
 greenShirtHeights = [6, 2, 5, 9, 11, 13 ]
 
 <h4>Sample Output</h4>
-true //Place all students with yellow shirts in the back row
+true 
+**Place all students with yellow
+shirts in the back row**
