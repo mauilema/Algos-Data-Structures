@@ -22,3 +22,5 @@ function classPhotos(redShirtHeights, blueShirtHeights) {
 		
   return true; // each student in the back row is taller than the student directly in front of them in the front row
 }
+
+const sort = (array) => array.sort((a,b) => b - a) //sort the array in descending order from highest to lowest
