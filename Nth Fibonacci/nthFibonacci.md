@@ -13,5 +13,5 @@ n = 8
 <span class="CodeEditor-promptComment">// 0, 1, 1, 2, 3, 5, 8, 13</span>
 <span class="CodeEditor-promptComment">// the above is the Fibonacci sequence leading to the nth Fibonacci of 8 </span>
 <!--0,1,1,2,3,5,8,13-->
-<!-- the above is the Fibonacci sequence leading to the nth Fibonacci of 8 -->
+<!-- the above is the Fibonacci sequence leading to the nth Fibonacci of 8 which 13-->
 </pre>
