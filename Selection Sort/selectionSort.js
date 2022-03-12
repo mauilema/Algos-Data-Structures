@@ -8,7 +8,7 @@ function selectionSort(array) {
           //the other elements in the array, we want to change the smallest index to match the smallest number
           for (let i = startingIdx + 1; i < array.length; i++) {//iterate through all the elements in the array; starting
               //at the element one position to the right of the startingIdx (startingIdx + 1)
-              if (array[smallestIdx] > array[i]) smallestIdx = i;//check if the value of the elment in the smallest idx 
+              if (array[smallestIdx] > array[i]) smallestIdx = i;//check if the value of the element in the smallest idx 
               //is greater than the value of the element in the current index. If yes, then the smallest index is now equal to
               //the current index. We keep iterating until we have a final value for the smallest index which holds the 
               //element with the smallest value
