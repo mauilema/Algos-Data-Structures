@@ -26,10 +26,10 @@ function findThreeLargestNumbers(array) {
   
   function shiftAndUpdate(array, num, idx) {//this helper function takes in the new array, the current number from traversing the input array, and an index
       //The point of this function is to shift numbers in the new array to the left depending on their value. Additionally we want to reassign the value of 
-      //the elements in the new array depending on their value. In the end, this function will be placing the largest numbers in asceding order, making sure there
+      //the elements in the new array depending on their value. In the end, this function will be placing the largest numbers in ascending order, making sure there
       //are only 3 numbers in the new array
       
-      for (let i = 0; i<=idx; i++) { //A for loop is used to traverse the numbers from 0 to the index passed as an argument.
+      for (let i = 0; i<=idx; i++) { //A for loop is used to traverse the numbers from 0 up to and including the index passed as an argument.
           if (i === idx) {//if the current index is strictly equal to the input index, then the element in the new array at that current index is reassigned the value of num; which
               //is the current number from the original input array
               array[i] = num; 
