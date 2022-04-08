@@ -40,7 +40,7 @@ function phoneNumberMnemonics(phoneNumber) {
   }
   
   
-  const DIGITS_LETTERS_DICTIONARY = { //us an object to store all the phone numbers as keys and a list of associated letters as values. 
+  const DIGITS_LETTERS_DICTIONARY = { //use an object to store all the phone numbers as keys and a list of associated letters as values. 
       0: ['0'],
       1: ['1'],
       2: ['a', 'b', 'c'],

@@ -1,6 +1,6 @@
 ## Phone Number Mnemonics
 
-### If you open the keypad of your mobile phone, it'll likely look like this:
+### The keypad on your cell phone looks like the image below:
 
 <pre>   ----- ----- -----
   |     |     |     |
