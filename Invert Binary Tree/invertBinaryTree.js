@@ -1,6 +1,6 @@
 function invertBinaryTree(tree) {
     if (tree === null) { //this conditional if statement is the base case. If a node is null, meaning it has no left or 
-          //right children, then step out of this function. We want to avoid swapping a node's children if we reach a leaf. 
+          //right children, then step out of the recursive call. We want to end the recursive call when we reach a leaf. 
           return;
       } 
           const tempLeftVal = tree.left; //declare a variable that holds the value of the left child of a node.
