@@ -27,7 +27,8 @@ class BinaryTree {
       
       
       const longestPathThroughRoot = leftTreeInfo.height + rightTreeInfo.height; //declare a const variable "longestPathThroughRoot" that stores the value of adding the current node's left child height plus its right child height.
-      //The longest path through a root should include the nodes on both sides of it's children. No matter how large one side of it's branch is, adding the other side will increase the total length of this path. 
+      //The longest path through a root should include the nodes on both sides of it's children. No matter how large one side of it's branch is, adding the other side will increase the total length of this path; unless the node
+      //has only one branch. 
       
       const maxDiameterSoFar = Math.max(leftTreeInfo.diameter, rightTreeInfo.diameter); //declare a const variable "maxDiameterSoFar" that store the maximum of a node's left child diameter vs its right child diameter 
       //The max diameter depends on how many nodes there are on each branch. The more nodes, the more edges. More edges increases the size of the diameter. 
