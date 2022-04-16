@@ -7,7 +7,7 @@
 ### You cannot use division to solve this problem. 
 
 <h3>Sample Input</h3>
-<pre><span class="CodeEditor-promptParameter">array</span> = [6,2,7,1,9]
+<pre><span class="CodeEditor-promptParameter">array</span> = [6,2
 </pre>
 
 <h3>Sample Output</h3>

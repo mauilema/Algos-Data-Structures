@@ -1,3 +1,6 @@
+//Recursive Approach. Time Complexity O(n) where n is the number of nodes in the tree. Space Complexity
+// O(d) where d is the depth of the tree. 
+
 function invertBinaryTree(tree) {
     if (tree === null) { //this conditional if statement is the base case. If a node is null, meaning it has no left or 
           //right children, then step out of the recursive call. We want to end the recursive call when we reach a leaf. 
