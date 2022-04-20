@@ -19,7 +19,7 @@
 
 <h3>Sample Output</h3>
 <pre><span class="CodeEditor-promptComment">// No output required.</span>
-<span class="CodeEditor-promptComment">// The 4th node from the end of the list (the node with value 6) is removed.</span>
+<span class="CodeEditor-promptComment">// The 3rd node from the end of the list (the node with value 7) is removed.</span>
 0 -&gt; 1 -&gt; 2 -&gt; 3 -&gt; 4 -&gt; 5 -&gt; 6 -&gt; 8 -&gt; 9
 </pre>
 
