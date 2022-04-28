@@ -7,7 +7,7 @@ function insertionSort(array) {
           let temp = array[i]; //declare a variable temp which stores the value of the array at the current index. temp will eventually be used to swap elements in place. 
           
           for (let j = i + 1; j < array.length; j++){ //use a second for loop to compare a number to it's neighbor to the right. j starts at i + 1 because we already have access to the first element
-              //using the index i. Our mission is to compare all the numbers in the array in pairs from left to right. We are searching for the index of the smalles number that we find.  
+              //using the index i. Our mission is to compare all the numbers in the array in pairs from left to right. We are searching for the index of the smallest number that we find.  
               
               if (array[j] < array[minIdx]) {//use an if condition to check if the the current number at i is less than it's neighbor to the right, which is the current number at j. array[minIdx] here is 
                   //important because it will reference to the smallest number we have found so far. 
@@ -20,7 +20,7 @@ function insertionSort(array) {
           array[i] = array[minIdx]; //at this point we are still at the first iteration of the first for loop; meaning i = 0. Therefore we access the array at i to get the first element. We reassing the 
           //value of the first element to now be the value of the array at minIdx; which is the index pointing to the smallest number we found.
           
-          array[minIdx] = temp;//the new value for the array at minIdx, which use to store the smallest number, is now array[i] aka temp. In other words, the space previously taken by the smallest 
+          array[minIdx] = temp;//the new value for the array at minIdx, which used to store the smallest number, is now array[i] aka temp. In other words, the space previously taken by the smallest 
           //number in the array is now taken by the first element in the array. 
       }
       return array; //by the end of both for loops. We should have found all the smallest numbers and swapped them to the beginning of the array one by one. Both, the first and second loops
