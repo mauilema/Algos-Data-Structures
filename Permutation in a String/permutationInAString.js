@@ -46,8 +46,8 @@ function permutationInAString (string, pattern) {
 
                 if (hashMap.get(leftChar) === 0) match--; //use another if condition to check if the value of the current leftChar is striclty equal to 0. If that is truthy, we want to subtract 1 from our match variable. 
                 //The fact that we have made it to this line without returning true means that the current substring window has a matching character but not a matching permutation. Therefore, we want to start our matching
-                //permutation search over again. 
-
+                //permutation search over again   
+                
                 hashMap.set(leftChar, hashMap.get(leftChar)+1) //add one to the value of our current leftChar in our hashMap. Since our current leftChar (which is being removed in our shrinking process) was a matching character,
                 //we want to add it's frequency back to our hashMap for our next permutation search. 
             }
