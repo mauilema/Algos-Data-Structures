@@ -19,14 +19,14 @@ function pairWithTargetSum (array, target) {
       
   
       if (currentSum > target && leftPointer !== rightPointer) { //use an if condition that checks if 1. the currentSum is greater than target sum. This means that we will need to move the right pointer one to the left. And 2. if 
-        //leftPointer doesn't equal rightPointer. This means that there is no pair sum that equals the target sum since both of our indeces are pointing to the same number. 
+        //leftPointer doesn't equal rightPointer. That situation would mean that there is no pair sum that equals the target sum since both of our indeces are pointing to the same number. 
 
         rightPointer--; //subtract 1 from the rightPointer to move it to the left. 
 
       } else if (currentSum < target && leftPointer !== rightPointer) { //use another if condition that checks if 1. the currentSum is less than target sum. This means that we will need to move the left pointer one to the right. And 2. if 
-        //leftPointer doesn't equal rightPointer. This means that there is no pair sum that equals the target sum since both of our indeces are pointing to the same number. 
+        //leftPointer doesn't equal rightPointer. That situation would mean that there is no pair sum that equals the target sum since both of our indeces are pointing to the same number. 
 
-        leftPointer++;
+        leftPointer++; //add 1 to the leftPointer to move it to the right. 
 
       } else {
 
