@@ -3,16 +3,16 @@ function pairWithTargetSum (array, target) {
     let rightPointer = array.length - 1; 
   
     for (let leftPointer = 0; leftPointer < array.length; leftPointer++) {
-      let leftNum = array[leftPointer]; //1
-      let rightNum = array[rightPointer]; //6
-      results = [leftPointer, rightPointer]; //[0, 4]
-      let currentSum = leftNum + rightNum; //7
+      let leftNum = array[leftPointer]; 
+      let rightNum = array[rightPointer]; 
+      results = [leftPointer, rightPointer]; 
+      let currentSum = leftNum + rightNum; 
   
       
   
-      if (currentSum > target && leftPointer !== rightPointer) { //7 > 6 ?
+      if (currentSum > target && leftPointer !== rightPointer) { 
         currentSum = leftNum + (array[rightPointer - 1]);
-        rightPointer--; //5
+        rightPointer--; 
       } else if (currentSum < target && leftPointer !== rightPointer) {
         currentSum = rightNum + (array[leftPointer + 1])
       } else {
