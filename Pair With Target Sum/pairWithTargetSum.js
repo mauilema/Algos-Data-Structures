@@ -1,9 +1,11 @@
 function pairWithTargetSum (array, target) {
     let results; //declare a variable "results" that doesn't store a value. It will have a value later on.
 
+    let leftPointer = 0; //Left pointer is a variable that is initialized with the value of 0. It will serve as the index of our left pointer. 
+
     let rightPointer = array.length - 1; //declare a variable "rightPointer" that is initialized with the index of the last element in the array. This will serve as the index of the right pointer. 
   
-    for (let leftPointer = 0; leftPointer < array.length; leftPointer++) { //use a for loop to traverse the array. Left pointer is a variable that is initialized with the value of 0. It will serve as the index of our left pointer. 
+    while (leftPointer < array.length) { //use a while loop to traverse the array. The terminating condition would be the last element in the array. 
 
       let leftNum = array[leftPointer]; //declare a variable "leftNum" that is initialized with the value of the element at the current left pointer index. 
 
@@ -19,14 +21,12 @@ function pairWithTargetSum (array, target) {
       if (currentSum > target && leftPointer !== rightPointer) { //use an if condition that checks if 1. the currentSum is greater than target sum. This means that we will need to move the right pointer one to the left. And 2. if 
         //leftPointer doesn't equal rightPointer. This means that there is no pair sum that equals the target sum since both of our indeces are pointing to the same number. 
 
-        currentSum = leftNum + (array[rightPointer - 1]); //reassign the value of currentSum to the sum of the leftNum and the number to the left of the rightPointer; since we're now moving the right pointer to the left. 
-
         rightPointer--; //subtract 1 from the rightPointer to move it to the left. 
 
       } else if (currentSum < target && leftPointer !== rightPointer) { //use another if condition that checks if 1. the currentSum is less than target sum. This means that we will need to move the left pointer one to the right. And 2. if 
         //leftPointer doesn't equal rightPointer. This means that there is no pair sum that equals the target sum since both of our indeces are pointing to the same number. 
 
-        currentSum = rightNum + (array[leftPointer + 1]) //reassign the value of currentSum to the sum of the rightNum and the number to the right of the leftPointer; since we're now moving the left pointer to the right. 
+        leftPointer++;
 
       } else {
 
@@ -34,8 +34,8 @@ function pairWithTargetSum (array, target) {
 
       }
   
-      if (leftPointer === rightPointer) return []; // if the leftPointer doesn't equal rightPointer. This means that there is no pair sum that equals the target sum since both of our indeces are pointing to the same number. 
-      //Therefore, we just return an empty array indicating that we didn't find a pair of number whose sum equals the target sum. 
+      if (leftPointer === rightPointer) return []; // if the leftPointer strictly equals the rightPointer, there is no pair sum that equals the target sum since both of our indeces are pointing to the same number. 
+      //Therefore, we just return an empty array indicating that we didn't find a pair of numbers whose sum equals the target sum. 
 
     }
   
