@@ -3,7 +3,7 @@ function removeDuplicates (array) { //this function takes a sorted array as it's
     let i = 1; //declare a variable "i" that is initialized with the number 1. This will serve as a pointer to every number in the array, except the first number. We will access the first number by using 
     //the other pointer as reference. 
 
-    let j = 1; //declare a variable "j" that is initialized with the number 1. This will server as a pointer to the next non duplicate number found by iterating the array.
+    let j = 1; //declare a variable "j" that is initialized with the number 1. This will serve as a pointer to the next non duplicate number found by iterating the array.
     
     while (i < array.length) { //use a while loop to iterate through all the elements in the array.
         
@@ -16,12 +16,12 @@ function removeDuplicates (array) { //this function takes a sorted array as it's
         //value to the non duplicate number we just found at pointer i. 
 
         j++; //since index j now points to a new non duplicate number. We want to move it to the right in order to search for the next non duplicate number. Index j will now temporarily point to a duplicate 
-        //number until we find the next non duplicate number by iterating index i.
+        //number until we find the next non duplicate number by iterating the rest of the array.
       }
       
       i++; //we increment index i by 1 to make sure we reach the terminating condition in the while loop. Also we want index i to point to every element in the array from left to right. 
     }
   
     return j; //at this point, we should have iterated through the entire array. All non duplicate numbers should have been moved in place to the left side of the array. The value of index j should be 
-    //storing the amount of non duplicate numbers we found. Therefore, we just return it. 
+    //storing the amount of non duplicate numbers we found. Therefore, we just return j. 
   }
