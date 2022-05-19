@@ -10,8 +10,8 @@ function removeRuplicatesV2(array, k) { //this function takes 2 arguments. An un
         array[j] = array[i]; //reassign the value of the array at index j to the value of the array at index i. Since j points to the non k number, we want it to have the proper value. That would be the 
         //value we just found at index i. 
 
-        j++; // now that j has the proper value for the non k number, we want to move it one position to the right. The number at index j is temporarily pointing to the non k number we just. We're waiting until 
-        //we find a new non k number to replace the number currently found at the new j position.
+        j++; // now that j has the proper value for the non k number, we want to move it one position to the right. Index j is now, temporarily pointing to the non k number we just found. We're waiting until 
+        //we find a new non k number to replace it.
 
       }
       
